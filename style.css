@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.links{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.links a{
+    color: #fff !important;
+}
+.links a:hover{
+    color: #3590d2 !important;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+    border-top: 50px solid #fff;
+}
+.container .top{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    background: #111;
+    padding-bottom: 0;
+}
+.container .top .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgBx .box{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .imgBx .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+.container .top .profileText{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.container .top .profileText h3{
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #fff;
+}
+.container .top .profileText h3 span{
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 300;
+    top: -10px;
+}
+.container .contentBox{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+.container .contentBox h3{
+    border-left: 4px solid #3590d2;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.container .contentBox ul{
+    position: relative;
+    margin: 10px 0;
+}
+.container .contentBox ul li{
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+}
+.container .contentBox ul li ion-icon{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #3590d2;
+}
+.container .contentBox ul.education li{
+    flex-direction: column;
+    margin: 25px 0;
+}
+h5{
+    color: #3590d2;
+}
+h4{
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+h6{
+    color: #666;
+    font-weight: 300;
+    font-size: 1em;
+}
+.language li{
+    flex-direction: column;
+}
+.language li span{
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+    border-radius: 5px;
+}
+.container .contentBox ul.interest{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .contentBox ul.interest li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.container .contentBox ul.interest li .icon{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #3590d2;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contentBox ul.interest li .icon ion-icon{
+    color: #fff;
+    margin-right: 0;
+}
+p{
+    font-style: 300;
+}
+.rightSide{
+    padding-left: 40px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+.about .box .year_company h5{
+    color: #333;
+    font-weight: 600;
+}
+.about .box .year_company h5:nth-child(1){
+    color: #3590d2;
+}
+.about .box .text h4{
+    color: #3590d2;
+    font-size: 16px;
+    margin: 0;
+}
+.about.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about.skills .box h4{
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.about.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 22px;
+    background: #e3e3e3;
+    border-radius: 5px;
+}
+.about.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 961px){
+    .container {
+    position: relative;
+    width: 100%;
+    max-width: 961px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgb(0 0 0 / 10%);
+    border: none;
+    }
+    .container .contentBox{
+        display: block;
+    }
+    .rightSide{
+        padding-left: 0;
+    }
+    h3{
+        font-size: 1.7em;
+    }
+    ul,
+    p{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 768px){
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 768px;
+            background: #fff;
+            margin-top: -10px;
+            border: none;
+            }
+            .container .top{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .container .top .imgBx {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container .top .imgBx .box {
+                width: 200px;
+                height: 200px;
+            }
+            h3{
+                font-size: 1.2em;
+            }
+            ul,
+            p{
+                font-size: 1em;
+            }
+            
+
+}
+@media screen and (max-width: 393px){
+    .container {
+        width: 100%;
+        max-width: 393px;
+        margin-top: -10px;
+        margin: 0;
+        }
+    .profileText{
+        padding: 0;
+    }
+    h3{
+        font-size: 1em;
+    }
+    ul,
+    p{
+        font-size: .7em;
+    }
+} 
